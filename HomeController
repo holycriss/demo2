@@ -1,0 +1,52 @@
+package com.example.demo.blog;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import java.util.List;
+
+
+
+@Slf4j
+@RestController
+@EnableWebMvc
+public class HomeController {
+
+    public HomeController() {
+
+    }
+
+    @GetMapping("list")
+    public List<String> page(){
+        final MyList myList = new MyList();
+        return myList.GetList();
+    }
+
+    @GetMapping("/list/article")
+    public String blog() {
+        final Main main = new Main();
+        return main.GetArticleName();
+    }
+
+    @GetMapping("/list/article/L'armateur Genavir")
+    public String article1(){
+        final Main main = new Main();
+        return main.article1();
+
+    }
+
+    @GetMapping("/list/article/Poker une ideologie")
+    public String article2(){
+        final Main main = new Main();
+        return main.article2();
+    }
+
+
+    @GetMapping("/list/article/Le Grip dans le cinema")
+    public String article3(){
+        final Main main = new Main();
+        return main.article3();
+    }
+}
+
