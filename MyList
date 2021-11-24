@@ -1,0 +1,26 @@
+package com.example.demo.blog;
+
+import lombok.Data;
+
+import java.util.*;
+
+
+
+@Data
+public class MyList {
+
+
+    List<String> list= new ArrayList<>();
+
+
+    public List<String> GetList() {
+        list.add("L'armateur Genavir");
+        list.add("Poker une ideologie");
+        list.add("Le Grip dans le cinema");
+
+        return list;
+
+    }
+}
+
+
