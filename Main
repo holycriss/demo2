@@ -1,0 +1,38 @@
+package com.example.demo.blog;
+
+import java.util.StringJoiner;
+import lombok.Data;
+
+@Data
+public class Main {
+
+
+
+    public String GetArticleName() {
+
+
+        return  """
+                 Article 1 : L'armateur Genavir,\s
+                 Article 2 : Poker une ideologie,\s
+                 Article 3 :  Le Grip dans le cinema\s""";
+    }
+
+    public String article1(){
+        String article1 = """
+            article: Cest la première fois en Europe qu’un navire de recherche sera géré par un armateur d’un pays différent\s
+                RECHERCHES - Cest la première fois en Europe qu’un navire de recherche sera géré par un armateur d’un pays différent
+                L’armateur Genavir, filiale de l’Institut français de recherche pour l’exploitation de la mer (Ifremer),
+                va opérer un navire scientifique belge, a annoncé ce lundi l’institut public
+                C’est « une belle reconnaissance de notre savoir-faire », se félicite dans un communiqué Eric Derrien,
+                directeur général de Genavir""";
+        return article1;
+    }
+
+    public String article2() {
+        return "article: Straight Flush is the highest hand in poker..... ";
+    }
+
+    public String article3(){
+        return "article: Grip tout un metier sur le fond et la forme";
+    }
+}
